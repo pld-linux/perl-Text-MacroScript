@@ -1,12 +1,11 @@
+%include	/usr/lib/rpm/macros.perl
 %define	pdir	Text
 %define	pnam	MacroScript
-%include	/usr/lib/rpm/macros.perl
 Summary:	Text-MacroScript perl module
 Summary(pl):	Modu³ perla Text-MacroScript
 Name:		perl-Text-MacroScript
 Version:	1.37
-Release:	5
-
+Release:	6
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
@@ -22,7 +21,7 @@ Text-MacroScript perl module.
 Modu³ perla Text-MacroScript.
 
 %prep
-%setup -q -n Text-MacroScript-%{version}
+%setup -q -n %{pdir}-%{pnam}-%{version}
 
 %build
 perl Makefile.PL
