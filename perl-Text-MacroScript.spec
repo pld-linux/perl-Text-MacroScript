@@ -2,9 +2,9 @@
 Summary:	Text-MacroScript perl module
 Summary(pl):	Modu³ perla Text-MacroScript
 Name:		perl-Text-MacroScript
-Version:	1.21
-Release:	3
-Copyright:	GPL
+Version:	1.34
+Release:	1
+License:	GPL
 Group:		Development/Languages/Perl
 Group(pl):	Programowanie/Jêzyki/Perl
 Source:		ftp://ftp.perl.org/pub/CPAN/modules/by-module/Text/Text-MacroScript-%{version}.tar.gz
