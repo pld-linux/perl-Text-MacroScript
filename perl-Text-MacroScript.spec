@@ -1,8 +1,8 @@
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	Text
 %define	pnam	MacroScript
-Summary:	Text-MacroScript perl module
-Summary(pl):	Modu³ perla Text-MacroScript
+Summary:	Text::MacroScript perl module
+Summary(pl):	Modu³ perla Text::MacroScript
 Name:		perl-Text-MacroScript
 Version:	1.37
 Release:	6
@@ -15,10 +15,10 @@ BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-Text-MacroScript perl module.
+Text::MacroScript perl module.
 
 %description -l pl
-Modu³ perla Text-MacroScript.
+Modu³ perla Text::MacroScript.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
