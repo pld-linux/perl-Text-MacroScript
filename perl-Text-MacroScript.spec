@@ -3,7 +3,7 @@ Summary:	Text-MacroScript perl module
 Summary(pl):	Modu³ perla Text-MacroScript
 Name:		perl-Text-MacroScript
 Version:	1.37
-Release:	3
+Release:	4
 License:	GPL
 Group:		Development/Languages/Perl
 Group(de):	Entwicklung/Sprachen/Perl
@@ -11,6 +11,7 @@ Group(pl):	Programowanie/Jêzyki/Perl
 Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/Text/Text-MacroScript-%{version}.tar.gz
 BuildRequires:	rpm-perlprov >= 3.0.3-16
 BuildRequires:	perl >= 5.6
+BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
