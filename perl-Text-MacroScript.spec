@@ -2,20 +2,25 @@
 %define	pdir	Text
 %define	pnam	MacroScript
 Summary:	Text::MacroScript - A macro pre-processor with embedded perl capability
+Summary(pl):	Text::MacroScript - preprocesor makr z mo¿liwo¶ci± wbudowywania Perla
 Name:		perl-Text-MacroScript
 Version:	1.37
-Release:	7
+Release:	8
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.cpan.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-BuildRequires:	rpm-perlprov >= 3.0.3-16
 BuildRequires:	perl >= 5.6
+BuildRequires:	rpm-perlprov >= 3.0.3-16
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 Define macros, scripts and variables in macro files or directly in
 text files.
+
+%description -l pl
+Modu³ ten pozwala na definiowanie makr, skryptów i zmiennych w plikach
+makr lub bezpo¶rednio w plikach tekstowych.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
@@ -29,13 +34,11 @@ rm -rf $RPM_BUILD_ROOT
 
 %{__make} install DESTDIR=$RPM_BUILD_ROOT
 
-gzip -9nf CHANGES README
-
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc *.gz macro
+%doc CHANGES README macro
 %{perl_sitelib}/Text/MacroScript.pm
 %{_mandir}/man3/*
