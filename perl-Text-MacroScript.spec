@@ -1,8 +1,7 @@
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	Text
 %define	pnam	MacroScript
-Summary:	Text::MacroScript perl module
-Summary(pl):	Modu³ perla Text::MacroScript
+Summary:	Text::MacroScript - A macro pre-processor with embedded perl capability
 Name:		perl-Text-MacroScript
 Version:	1.37
 Release:	6
@@ -15,10 +14,8 @@ BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-Text::MacroScript perl module.
-
-%description -l pl
-Modu³ perla Text::MacroScript.
+Define macros, scripts and variables in macro files or directly in
+text files.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
