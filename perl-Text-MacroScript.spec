@@ -28,7 +28,7 @@ makr lub bezpo¶rednio w plikach tekstowych.
 
 %build
 %{__perl} Makefile.PL \
-	INSTALLDIRS=vendor 
+	INSTALLDIRS=vendor
 %{__make}
 
 %install
