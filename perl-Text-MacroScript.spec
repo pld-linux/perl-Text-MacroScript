@@ -9,7 +9,7 @@ Summary:	Text::MacroScript - a macro pre-processor with embedded perl capability
 Summary(pl.UTF-8):	Text::MacroScript - preprocesor makr z możliwością wbudowywania Perla
 Name:		perl-Text-MacroScript
 Version:	1.38
-Release:	1
+Release:	2
 License:	LGPL
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
