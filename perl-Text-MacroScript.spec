@@ -4,7 +4,6 @@
 
 %define		pdir	Text
 %define		pnam	MacroScript
-%include	/usr/lib/rpm/macros.perl
 Summary:	Text::MacroScript - a macro pre-processor with embedded perl capability
 Summary(pl.UTF-8):	Text::MacroScript - preprocesor makr z możliwością wbudowywania Perla
 Name:		perl-Text-MacroScript
